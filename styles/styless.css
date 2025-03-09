@@ -408,7 +408,7 @@
   }
   
   /* Pantallas medianas (tabletas) */
-   @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 768px) and (max-width: 1024px) {
     .content {
       flex-direction: column;
       align-items: center;
@@ -426,33 +426,29 @@
   } 
   
   /* Pantallas pequeñas (móviles) */
-   @media (max-width: 767px) {
-    .container {
-      flex-direction: column;
-      text-align: center;
-      height: auto;
+  @media (max-width: 720px) {
+    #fondo-principal {
+      height: auto; 
+      padding: 20px 0; 
     }
     
-    .content, .content2 {
-      width: 100%;
-      flex-direction: column;
-      align-items: center;
+    .container {
+      flex-direction: column; 
     }
-  
-    .title {
-      width: 90%;
-      font-size: 32px;
-      text-align: center;
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
-  
-    .text {
-      width: 90%;
-      font-size: 16px;
-      text-align: center;
+
+    .logo1 {
+        max-width: 120px; 
     }
-  
-    .boton {
-      width: 80%;
-      font-size: 16px;
+
+    .text-float {
+        margin-top: 10px;
+        font-size: 14px; 
     }
-  } 
+}
+
