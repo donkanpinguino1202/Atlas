@@ -393,75 +393,110 @@
     width: 230px;
   }
   
-/* === Media Queries (Desktop First) === */
-/* Para dispositivos grandes: 1024px o menos */
-@media (max-width: 1024px) {
-  .features-grid, .pricing {
-      flex-direction: column;
-      align-items: center;
-  }
-  .feature, .pricing-plan {
-      width: 80%;
-  }
-}
 
-/* Para dispositivos pequeños: 768px o menos */
-@media (max-width: 768px) {
-  .hero, .contact {
-      text-align: center;
-      padding: 30px;
+
+/*Media Queries (Escritorio)*/
+@media (max-width: 1024px) {
+  .title {
+      font-size: 45px;
   }
-  .cta {
-      flex-direction: column;
-      text-align: center;
-  }
-  .contact-form input, .contact-form textarea {
+
+  .text {
+      font-size: 18px;
       width: 100%;
   }
-}
 
-/* === Media Queries (Desktop First) === */
-/* Para dispositivos grandes: 1024px o menos */
-@media (max-width: 1024px) {
-  .features-grid, .pricing {
-      flex-direction: column;
+  .container2 {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+
+  .content3 {
+      width: 100%;
       align-items: center;
   }
-  .feature, .pricing-plan {
-      width: 80%;
+
+  .imagen {
+      width: 100%;
+      height: auto;
+  }
+
+  .boton {
+      width: 100px;
+      height: 40px;
+      font-size: 16px;
   }
 }
 
-/* Para dispositivos pequeños: 768px o menos */
+/*Media Queries (Tablets)*/
 @media (max-width: 768px) {
-  .hero, .contact {
-      text-align: center;
-      padding: 30px;
-  }
-  .cta {
-      flex-direction: column;
-      text-align: center;
-  }
-  .contact-form input, .contact-form textarea {
+  .title {
+      font-size: 40px;
       width: 100%;
   }
-  
+
+  .text {
+      font-size: 16px;
+      width: 100%;
+  }
+
+  .content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .container2, .container3 {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .imagen {
+      width: 100%;
+      height: auto;
+  }
+
+  .boton {
+      width: 90px;
+      height: 35px;
+      font-size: 14px;
+  }
 }
 
-/* Para dispositivos muy pequeños: 480px o menos */
+/*Media Queries (Celulares)*/
 @media (max-width: 480px) {
-  .nav-container {
-      flex-direction: column;
-      text-align: center;
-  }
-  .cta img, .cta1 img {
-      max-width: 80%;
-  }
-  .btn {
+  .title {
+      font-size: 30px;
       width: 100%;
   }
-  
-  
 
-  
+  .text {
+      width: 100%;
+      font-size: 14px;
+  }
+
+  .content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .boton {
+      width: 80px;
+      height: 35px;
+      font-size: 14px;
+  }
+
+  .container2, .container3, .container4 {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .imagen {
+      width: 100%;
+      height: auto;
+  }
 }
+
+
