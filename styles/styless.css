@@ -393,79 +393,75 @@
     width: 230px;
   }
   
-  
-  /* Media Queries para Responsividad */
-  
-  /* Pantallas grandes (escritorio) */
-@media (min-width: 1280px) {
-  .title {
-    font-size: 50px;
-    }
-  
-  .text {
-    font-size: 20px;
-  }
-}
-
-  /* Pantallas medianas (tabletas) */
+/* === Media Queries (Desktop First) === */
+/* Para dispositivos grandes: 1024px o menos */
 @media (max-width: 1024px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
+  .features-grid, .pricing {
+      flex-direction: column;
+      align-items: center;
   }
-
-  .title {
-    font-size: 40px;
-    text-align: center;
-  }
-
-  .text {
-    font-size: 16px;
-    text-align: center;
+  .feature, .pricing-plan {
+      width: 80%;
   }
 }
 
-/* Pantallas pequeñas (móviles) */
-@media (max-width: 720px) {
-  #fondo-principal {
-    height: auto; /* Altura automática para evitar cortes */
-    padding: 20px 0;
+/* Para dispositivos pequeños: 768px o menos */
+@media (max-width: 768px) {
+  .hero, .contact {
+      text-align: center;
+      padding: 30px;
   }
+  .cta {
+      flex-direction: column;
+      text-align: center;
+  }
+  .contact-form input, .contact-form textarea {
+      width: 100%;
+  }
+}
 
-  .container {
-    flex-direction: column;
+/* === Media Queries (Desktop First) === */
+/* Para dispositivos grandes: 1024px o menos */
+@media (max-width: 1024px) {
+  .features-grid, .pricing {
+      flex-direction: column;
+      align-items: center;
   }
+  .feature, .pricing-plan {
+      width: 80%;
+  }
+}
 
-  .content {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+/* Para dispositivos pequeños: 768px o menos */
+@media (max-width: 768px) {
+  .hero, .contact {
+      text-align: center;
+      padding: 30px;
   }
+  .cta {
+      flex-direction: column;
+      text-align: center;
+  }
+  .contact-form input, .contact-form textarea {
+      width: 100%;
+  }
+  
+}
 
-  .logo1 {
-    max-width: 120px; /* Reducir tamaño en móviles */
+/* Para dispositivos muy pequeños: 480px o menos */
+@media (max-width: 480px) {
+  .nav-container {
+      flex-direction: column;
+      text-align: center;
   }
+  .cta img, .cta1 img {
+      max-width: 80%;
+  }
+  .btn {
+      width: 100%;
+  }
+  
+  
 
-  .text-float {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-
-  .title {
-    font-size: 30px; /* Texto más pequeño para mejor ajuste */
-  }
-
-  .text {
-    font-size: 14px;
-    width: 100%;
-    padding: 0 10px;
-    text-align: center;
-  }
-
-  .boton {
-    width: 80%;
-    max-width: 200px;
-    height: 40px;
-    font-size: 14px;
-  }
+  
 }
